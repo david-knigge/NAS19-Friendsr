@@ -62,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
             friends = new ArrayList<>();
             setFriends();
         }
-
         setAdapter();
     }
 

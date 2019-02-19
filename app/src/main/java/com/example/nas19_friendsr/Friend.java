@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 public class Friend implements Serializable, Parcelable {
     private String name, bio;
-    private int drawableId;
+    private int drawableId, likes;
     private float rating;
 
     public Friend(String name, String bio, int drawableId) {
@@ -21,6 +21,7 @@ public class Friend implements Serializable, Parcelable {
         bio = in.readString();
         drawableId = in.readInt();
         rating = in.readFloat();
+        likes = in.readInt();
     }
 
     public static final Creator<Friend> CREATOR = new Creator<Friend>() {
@@ -51,6 +52,22 @@ public class Friend implements Serializable, Parcelable {
 
     public void setBio(String bio) { this.bio = bio; }
 
+    public void addLike() {
+        if (0 != likes) {
+            likes += 1;
+        } else {
+            likes = 1;
+        }
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
     public int getDrawableId() {
         return drawableId;
     }
@@ -66,10 +83,10 @@ public class Friend implements Serializable, Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-
         dest.writeString(name);
         dest.writeString(bio);
         dest.writeInt(drawableId);
         dest.writeFloat(rating);
+        dest.writeInt(likes);
     }
 }
