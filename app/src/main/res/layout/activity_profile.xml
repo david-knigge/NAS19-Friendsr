@@ -34,22 +34,6 @@
         app:layout_constraintTop_toBottomOf="@+id/profileImage"
         app:layout_constraintVertical_weight="1" />
 
-    <EditText
-        android:id="@+id/profileNameEdit"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:inputType="text"
-        android:text="Arya"
-        android:textSize="30sp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/profileBio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileImage"
-        app:layout_constraintVertical_weight="1" />
-
     <TextView
         android:id="@+id/profileBio"
         android:layout_width="0dp"

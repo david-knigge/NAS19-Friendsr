@@ -1,7 +1,6 @@
 package com.example.nas19_friendsr;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +19,10 @@ public class FriendsAdapter extends ArrayAdapter<Friend> {
         friends = objects;
     }
 
+    /*
+     * Either creates new grid item or overrides previously existing grid item with friends name
+     * and image.
+     */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {

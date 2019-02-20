@@ -5,17 +5,27 @@ import android.os.Parcelable;
 
 import java.io.Serializable;
 
+/*
+ * Stores friend details. Implements Serializable to pass between intents, and Parcelable to
+ * store in Bundle.
+ */
 public class Friend implements Serializable, Parcelable {
     private String name, bio;
     private int drawableId, likes;
     private float rating;
 
+    /*
+     * Create a new friend using name, bio and id of photo as input.
+     */
     public Friend(String name, String bio, int drawableId) {
         this.name = name;
         this.bio = bio;
         this.drawableId = drawableId;
     }
 
+    /*
+     * Restore instance from parcel.
+     */
     protected Friend(Parcel in) {
         name = in.readString();
         bio = in.readString();
@@ -24,6 +34,9 @@ public class Friend implements Serializable, Parcelable {
         likes = in.readInt();
     }
 
+    /*
+     * Create friend parcel.
+     */
     public static final Creator<Friend> CREATOR = new Creator<Friend>() {
         @Override
         public Friend createFromParcel(Parcel in) {
@@ -48,10 +61,12 @@ public class Friend implements Serializable, Parcelable {
         return bio;
     }
 
-    public void setName(String name) { this.name = name; }
-
     public void setBio(String bio) { this.bio = bio; }
 
+    /*
+     * If likes is not set for this friend, instantiate with one like, otherwise increment number
+     * of likes.
+     */
     public void addLike() {
         if (0 != likes) {
             likes += 1;
@@ -70,10 +85,6 @@ public class Friend implements Serializable, Parcelable {
 
     public int getDrawableId() {
         return drawableId;
-    }
-
-    public float getRating() {
-        return rating;
     }
 
     @Override
