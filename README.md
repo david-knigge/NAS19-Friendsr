@@ -8,4 +8,3 @@ A simple friends app that allows for scrolling through a list of friends, adding
 ![Landscape Mode](doc/Screenshot_5.png)
 ![Landscape Mode](doc/Screenshot_6.png)
 ![Landscape Mode](doc/Screenshot_7.png)
-![Landscape Mode](doc/Screenshot_8.png)
