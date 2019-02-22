@@ -24,6 +24,11 @@ public class ProfileActivity extends AppCompatActivity {
     Button likeButton;
 
     @Override
+    public void setTitle(CharSequence title) {
+        super.setTitle(title);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
@@ -94,6 +99,7 @@ public class ProfileActivity extends AppCompatActivity {
         name.setText(retrievedFriend.getName());
         bio.setText(retrievedFriend.getBio());
         bioEdit.setText(retrievedFriend.getBio());
+        setTitle(retrievedFriend.getName());
 
         String bioText = preferences.getString(retrievedFriend.getName() + "Bio", null);
         float rating = preferences.getFloat(retrievedFriend.getName()+"Rating", 0);

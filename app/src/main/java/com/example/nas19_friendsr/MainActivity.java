@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             friends = new ArrayList<>();
             setFriends();
         }
+        setTitle("Friendsr");
         setAdapter();
     }
 
@@ -43,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putSerializable("friends", friends);
+    }
+
+    @Override
+    public void setTitle(CharSequence title) {
+        super.setTitle(title);
     }
 
     /*

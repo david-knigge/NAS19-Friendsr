@@ -24,7 +24,6 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:text="Arya"
-        android:textSize="30sp"
-        />
+        android:textSize="16sp" />
 
 </LinearLayout>
