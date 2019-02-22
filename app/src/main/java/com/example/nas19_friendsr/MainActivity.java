@@ -93,16 +93,16 @@ public class MainActivity extends AppCompatActivity {
      * Set up all friends.
      */
     public void setFriends() {
-        friends.add(new Friend("Arya", "standard", getResources().getIdentifier("arya" , "drawable", getPackageName())));
-        friends.add(new Friend("Cersei", "standard", getResources().getIdentifier("cersei" , "drawable", getPackageName())));
-        friends.add(new Friend("Daenerys", "standard", getResources().getIdentifier("daenerys" , "drawable", getPackageName())));
-        friends.add(new Friend("Jaime", "standard", getResources().getIdentifier("jaime" , "drawable", getPackageName())));
-        friends.add(new Friend("Jon", "standard", getResources().getIdentifier("jon" , "drawable", getPackageName())));
-        friends.add(new Friend("Jorah", "standard", getResources().getIdentifier("jorah" , "drawable", getPackageName())));
-        friends.add(new Friend("Margaery", "standard", getResources().getIdentifier("margaery" , "drawable", getPackageName())));
-        friends.add(new Friend("Melisandre", "standard", getResources().getIdentifier("melisandre" , "drawable", getPackageName())));
-        friends.add(new Friend("Sannsa", "standard", getResources().getIdentifier("sansa" , "drawable", getPackageName())));
-        friends.add(new Friend("Tyrion", "standard", getResources().getIdentifier("tyrion" , "drawable", getPackageName())));
+        friends.add(new Friend("Arya", "Edit this bio...", getResources().getIdentifier("arya" , "drawable", getPackageName())));
+        friends.add(new Friend("Cersei", "Edit this bio...", getResources().getIdentifier("cersei" , "drawable", getPackageName())));
+        friends.add(new Friend("Daenerys", "Edit this bio...", getResources().getIdentifier("daenerys" , "drawable", getPackageName())));
+        friends.add(new Friend("Jaime", "Edit this bio...", getResources().getIdentifier("jaime" , "drawable", getPackageName())));
+        friends.add(new Friend("Jon", "Edit this bio...", getResources().getIdentifier("jon" , "drawable", getPackageName())));
+        friends.add(new Friend("Jorah", "Edit this bio...", getResources().getIdentifier("jorah" , "drawable", getPackageName())));
+        friends.add(new Friend("Margaery", "Edit this bio...", getResources().getIdentifier("margaery" , "drawable", getPackageName())));
+        friends.add(new Friend("Melisandre", "Edit this bio...", getResources().getIdentifier("melisandre" , "drawable", getPackageName())));
+        friends.add(new Friend("Sannsa", "Edit this bio...", getResources().getIdentifier("sansa" , "drawable", getPackageName())));
+        friends.add(new Friend("Tyrion", "Edit this bio...", getResources().getIdentifier("tyrion" , "drawable", getPackageName())));
     }
 
     /*
